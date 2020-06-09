@@ -46,6 +46,10 @@ nav {
     padding: 0px 10px;
 }
 
+@media only screen and (max-width: 480px) {
+    
+}
+
 /* Banner */
 #banner {
     background-color: #C0C0C0;
@@ -446,8 +450,22 @@ nav {
 }   
 
 @media only screen and (max-width: 480px) {
+    #thesis {
+        padding-bottom: 24px;
+    }
+
+    #thesis .thesis_video {
+        display: block;
+        width: 100%;
+        padding: 0px;
+    }
+
     .thesis_content {
         display: none;
+    }
+
+    .thesis_video video {
+        width: 100%;
     }
 
     .thesis_video p {
@@ -473,4 +491,10 @@ footer {
 
 .terms p {
     margin-right: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+    footer {
+        border-top: none;
+    }
 }
