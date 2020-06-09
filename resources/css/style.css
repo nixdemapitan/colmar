@@ -50,7 +50,6 @@ nav {
 #banner {
     background-color: #C0C0C0;
     display: flex;
-    width: 100%;
 }
 
 .banner_image {
@@ -84,6 +83,39 @@ nav {
     background-color: rgb(53, 49, 49);
     color: white;
     font-size: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+    #banner {
+        background-color: #C0C0C0;
+        display: block;
+        padding: 32px 0px 32px 0px;
+    }
+
+    .banner_image {
+        padding: 0px;
+    }
+
+    .banner_image img {
+        width: 100%;
+    }
+
+    .banner_message .message1{
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .banner_message .message2{
+        font-size: 25px;
+    }
+
+    .banner_message button{
+        width: 360px;
+        height: 55px;
+        background-color: rgb(53, 49, 49);
+        color: white;
+        font-size: 20px;
+    }
 }
 
 /* Information */
@@ -139,12 +171,10 @@ nav {
 
 .information_images {
     width: 31%;
-    height: auto;
 }
 
 .information_images img {
     width: 100%;
-    height: auto;
 }
 
 .information_desc {
@@ -174,6 +204,66 @@ nav {
 
 .information_wrap:hover {
     background-color: #C0C0C0;
+}
+
+@media only screen and (max-width: 480px) {
+    #information {
+        padding: 16px 16px 32px 16px;
+    }
+
+    .information_container {
+        display: none;
+    }
+
+    .information_container2 {
+        display: block;
+        width: 100%;
+        border-left: none;
+    }
+
+    .information_wrap {
+        display: block;
+        padding: 0px;
+    }
+
+    .information_images {
+        width: 100%;
+    }
+
+    .information_images img {
+        width: 100%;
+        height: 230px;
+    }
+
+    .information_desc {
+        width: 100%;
+        padding: 15px 0px 0px 16px;
+        line-height: initial;
+    }
+    
+    .information_desc .title{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    .information_desc .details{
+        font-size: 20px;
+        padding-top: 5px;
+    }
+    
+    .information_desc a{
+        font-size: 18px;
+        padding-top: 15px;
+        text-decoration: none;
+    }
+    
+    .information_wrap:hover {
+        background-color: transparent;
+    }
+
+    .information_border {
+        border: none;
+    }
 }
 
 /* Course */
@@ -230,6 +320,53 @@ nav {
     font-size: 23px;
     line-height: 35px;
     color: gray;
+}
+
+@media only screen and (max-width: 480px) {
+    #course {
+        background-color: #fff;
+        padding: 32px 0px 0px 0px;
+    }
+
+    #course .course_start {
+        font-size: 45px;
+        font-weight: bold;
+        text-align: center;
+        padding: 0px 0px 16px 0px;
+    }
+
+    .course_container {
+        display: block;
+        width: 100%;
+    }
+
+    .course_content {
+        width: 100%;
+        padding: 0px 24px;
+    }
+
+    .course_wrap {
+        height: auto;
+        padding-bottom: 8px;
+    }
+
+    .course_detail {
+        padding: 0px;
+    }
+
+    .course_wrap img {
+        display: none;
+    }
+
+    .course_title {
+        background-color: #C0C0C0;
+        padding: 16px 0px 24px 16px;
+        font-size: 28px;
+    }
+
+    .course_description {
+        display: none;
+    }
 }
 
 /* Thesis */
@@ -307,3 +444,33 @@ nav {
 .thesis_content :hover  {
     background-color: #C0C0C0;
 }   
+
+@media only screen and (max-width: 480px) {
+    .thesis_content {
+        display: none;
+    }
+
+    .thesis_video p {
+        display: none;
+    }
+}
+
+footer {
+    border-top: 2px solid rgb(223, 222, 222);
+    padding: 16px 0px 36px 24px;
+    width: 100%;
+    display: flex;
+}
+
+.copyright {
+    width: 100%;
+}
+
+.terms {
+    display: flex;
+
+}
+
+.terms p {
+    margin-right: 20px;
+}
