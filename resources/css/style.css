@@ -46,8 +46,28 @@ nav {
     padding: 0px 10px;
 }
 
+.links_mobile {
+    display: none;
+}
+
 @media only screen and (max-width: 480px) {
-    
+    .links {
+        display: none;
+    }
+
+    .links_mobile {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .logo {
+        width: 25%;
+    }
+
+    .logo p {
+        display: none;
+    }
 }
 
 /* Banner */
